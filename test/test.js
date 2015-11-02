@@ -33,21 +33,21 @@ describe('Average Score', function() {
 });
 
 describe('Median Score', function() {
-  it('should return the average score of 90', function() {
-    expect(code.medianScore([90, 95, 87, 60])).to.equal(90);
+  it('should return the average score of 92', function() {
+    expect(code.medianScore([90, 95, 88, 60])).to.equal(92);
   });
-  it('should return the average score of 80', function() {
-    expect(code.medianScore([52, 80, 80, 86, 94])).to.equal(80);
+  it('should return the average score of 86', function() {
+    expect(code.medianScore([52, 80, 80, 86, 94])).to.equal(86);
   });
-  it('should return the average score of 91', function() {
-    expect(code.medianScore([82, 92, 75, 91, 92, 89, 95, 100, 86])).to.equal(91);
+  it('should return the average score of 92', function() {
+    expect(code.medianScore([82, 92, 75, 91, 92, 89, 95, 100, 86])).to.equal(92);
   });
 });
 
 describe('Mode Score', function() {
   it('shoud return the mode of 85', function() {
-    expect(code.modeScore([52, 52, 85, 85, 85, 91])).not.to.equal(91);
-    expect(code.modeScore([52, 52, 85, 85, 85, 91])).to.equal(52);
+    expect(code.modeScore([52, 52, 85, 85, 85, 91])).not.to.equal(52);
+    expect(code.modeScore([52, 52, 85, 85, 85, 91])).to.equal(85);
   });
   it('shoud return the mode of 92', function() {
     expect(code.modeScore([82, 92, 75, 91, 92, 89, 95, 100, 86])).to.equal(92);
