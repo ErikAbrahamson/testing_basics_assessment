@@ -23,12 +23,11 @@ module.exports = {
   },
   modeScore: function(scores) {
     scores = scores.sort(function(a, b) { return a - b; });
-    var mode = 0, count = 0;
+    var mode = 0;
     for (var i = 0; i < scores.length; i++) {
       for (var j = 0; j < i; j++) {
         if (scores[j] === scores[i]) {
           mode = scores[j];
-          count++;
         }
       }
     }
