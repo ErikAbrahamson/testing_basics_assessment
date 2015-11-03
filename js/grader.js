@@ -17,7 +17,7 @@ module.exports = {
       return scores[Math.round((scores.length / 2))];
     } else {
       m1 = scores[(scores.length / 2) - 1];
-      m2 = scores[(scores.length / 2) + 1];
+      m2 = scores[(scores.length / 2)];
       return Math.round((m1 + m2) / 2);
     }
   },

@@ -34,7 +34,7 @@ describe('Average Score', function() {
 
 describe('Median Score', function() {
   it('should return the average score of 92', function() {
-    expect(code.medianScore([90, 95, 88, 60])).to.equal(92);
+    expect(code.medianScore([90, 95, 88, 60])).to.equal(89);
   });
   it('should return the average score of 86', function() {
     expect(code.medianScore([52, 80, 80, 86, 94])).to.equal(86);
