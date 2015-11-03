@@ -8,7 +8,7 @@ module.exports = {
   },
   averageScore: function(scores) {
     var total = 0;
-  	scores.forEach(function(num) { total += num; });
+    scores.forEach(function(num) { total += num; });
     return Math.round(total / scores.length);
   },
   medianScore: function(scores) {
