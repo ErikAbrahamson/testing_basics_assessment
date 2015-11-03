@@ -26,9 +26,7 @@ module.exports = {
     var mode = 0;
     for (var i = 0; i < scores.length; i++) {
       for (var j = 0; j < i; j++) {
-        if (scores[j] === scores[i]) {
-          mode = scores[j];
-        }
+        if (scores[j] === scores[i]) mode = scores[j];
       }
     }
   return mode;
